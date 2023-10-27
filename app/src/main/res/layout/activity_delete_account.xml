@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Me.Setting.DeleteAccount"
+    android:orientation="vertical"
+    android:background="#303136">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Xóa tài khoản"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hãy cân nhắc kỹ trước khi xóa tài khoản!"
+            android:textColor="#bdbec3"
+            android:gravity="center"
+            android:textSize="18dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/register_toMe_xml"
+                android:layout_width="250dp"
+                android:layout_height="65dp"
+                android:backgroundTint="#383b42"
+                android:text="Xóa tài khoản"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:textSize="23dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

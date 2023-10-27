@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Me.UploadSong"
+    android:background="#303136">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="40dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:text="Bài hát"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="18dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp">
+                    <ImageView
+                        android:id="@+id/posterUpload_xml"
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:background="#383b42"/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Poster"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:text="Bài hát:"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:layout_marginLeft="20dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="35dp">
+                <EditText
+                    android:id="@+id/nameSong_upload_xml"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Tên bài hát"
+                    android:textColorHint="#b9babf"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:background="#383b42"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:text="Nghệ sĩ:"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:layout_marginLeft="20dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="35dp">
+                <EditText
+                    android:id="@+id/artist_upload_xml"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Nghệ sĩ"
+                    android:textColorHint="#b9babf"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:background="#383b42"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp">
+            <TextView
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:text="Chủ đề:"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:layout_marginLeft="20dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="35dp">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Chủ đề"
+                    android:textColorHint="#b9babf"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+                    android:background="#383b42"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/chooseFile_xml"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textSize="20dp"
+                    android:textColor="#898b96"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/white"
+                    android:gravity="center"
+                    android:layout_marginHorizontal="35dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_horizontal">
+                    <TextView
+                        android:id="@+id/tv_chooseFile_xml"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Chọn"
+                        android:textSize="20dp"
+                        android:textColor="#898b96"
+                        android:textStyle="bold"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/upload_xml"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Thêm"
+                android:textSize="20dp"
+                android:textColor="#898b96"
+                android:textStyle="bold"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:layout_marginHorizontal="35dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_upload_song_xml"
+        android:orientation="horizontal"/>
+
+</RelativeLayout>

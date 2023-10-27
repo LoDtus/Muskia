@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.song.SongPlayer"
+    android:orientation="vertical"
+    android:background="#303136">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/posterPlayer_xml"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/ic_launcher_background"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp">
+                <TextView
+                    android:id="@+id/nameSong_xml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên bài hát"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:background="@color/black"
+                    android:paddingHorizontal="5dp"/>
+                <TextView
+                    android:id="@+id/nameArtist_xml"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tác giả"
+                    android:textColor="#bdbec3"
+                    android:background="@color/black"
+                    android:layout_marginTop="2dp"
+                    android:paddingHorizontal="5dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="33dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="lượt xem"
+                android:textColor="#bdbec3"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="33dp"
+                android:text="0"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="lượt thích"
+                android:textColor="#bdbec3"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/timelineSong_xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="15dp">
+        <TextView
+            android:id="@+id/currentTime_xml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="00:00"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/durationTime_xml"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="viewEnd"
+            android:text="00:00"
+            android:textColor="@color/white"/>
+        
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/round_circle_25"
+                android:backgroundTint="@color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/pause_xml"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/play_button_arrowhead_1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center_horizontal"
+            android:layout_marginEnd="40dp">
+            <ImageView
+                android:id="@+id/notLike_xml"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/heart1"
+                app:tint="@color/white"
+                android:layout_alignParentEnd="true"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

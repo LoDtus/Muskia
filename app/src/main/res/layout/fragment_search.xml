@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Search.SearchFragment"
+    android:orientation="vertical"
+    android:background="#303136">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp">
+                <EditText
+                    android:id="@+id/searchBar_xml"
+                    android:paddingHorizontal="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Bạn muốn nghe gì?"
+                    android:textColorHint="#b9babf"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:background="#383b42"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_below="@+id/searchBar_xml">
+            <ImageView
+                android:id="@+id/searchButton_xml"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/magnify"
+                app:tint="#b9babf"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listSearch_xml"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
